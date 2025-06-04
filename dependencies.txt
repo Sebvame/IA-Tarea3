@@ -1,0 +1,14 @@
+# 1. Crear entorno virtual
+python -m venv venv
+
+# 2. Activar entorno virtual
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# 3. Instalar dependencias
+pip install streamlit sentence-transformers faiss-cpu langchain langchain-community langchain-ollama pypdf2 python-dotenv numpy pandas rank-bm25
+
+# 4. Verificar instalación
+python -c "import streamlit, sentence_transformers, faiss, langchain; print('✅ Todas las dependencias instaladas')"
